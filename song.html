@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body {
+            font-family: "Do hyun", sans-serif;
+            }
+        .blue {
+            width: 0px;
+            height: 5px;
+            background-color: rgb(92, 100, 254);
+        }
+        .lyrics {
+            width: 250px;
+            height: 150px;
+            overflow-y: scroll;
+            background-color: rgb(192, 224, 255);
+        }
+    </style>
+    <div class = "blue"></div>
+    <div class = "lyrics"></div>
+    <p>
+Si tú me hubieras dicho siempre la verdad
+Si hubieras respondido cuando te llamé
+Si hubieras amado cuando te amé
+Serías en mis sueños la mejor mujer
+Si no supiste amar
+Ahora te puedes marchar
+Si tú supieras lo que yo sufrí por ti
+Teniendo que olvidarte sin saber porqué
+Y ahora me llamas, me quieres ver
+Me juras que has cambiado y piensas en volver
+Si no supiste amar
+Ahora te puedes marchar
+Aléjate de mí
+No hay nada más que hablar
+Contigo yo perdí
+Ya tengo con quien ganar
+Ya sé que no hubo nadie que te diera lo que yo te di
+Que nadie te ha cuidado como te cuidé
+Por eso comprendo que estás aquí
+Pero ha pasado el tiempo y yo también cambié
+Si no supiste amar
+Ahora te puedes marchar
+Aléjate de mí
+No hay nada más que hablar
+Contigo yo perdí
+Ya tengo con quien ganar
+Ya sé que no hubo nadie que te diera lo que yo te di
+Que nadie te ha cuidado como te cuidé
+Por eso comprendo que estás aquí
+Pero ha pasado el tiempo y yo también cambié
+Si no supiste amar
+Ahora te puedes marchar
+Si no supiste amar
+Ahora te puedes marchar
+    </p>
+</div>
+<script>
+    let bar = document.querySelector('.blue');
+    let lyric = document.querySelector('.lyric');
+
+    lyric.addEventListener("scroll", function () {
+        let scrollTop = lyric.scrollTop;
+        let scrollHeight = lyric.scrollHeight - lyric.cilentHeight;
+        let per = scrollTop / scrollHeight;
+        bar.style.width = `${per * 250}px`;
+    });
+</script>
+</body>
+</html>

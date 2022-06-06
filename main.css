@@ -1,0 +1,84 @@
+/* .box {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    border: 2px solid rgb(133, 133, 133);
+}
+
+.purple {
+    background-color: rgb(120, 89, 120);
+}
+
+.yellow {
+    background-color: rgb(243, 235, 8);
+}
+
+.bar {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(211, 130, 211);
+    text-align: center;
+    padding-top: 20px;
+}
+
+.newBar {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(235, 111, 34, 0.731);
+    text-align: center;
+    padding-top: 20px;
+    display: none;
+}
+
+.show {
+    display: block;
+} */
+
+body {
+    font-family: "Do hyun", sans-serif;
+}
+
+ul.list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #ccc;
+}
+
+ul.list::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.tab-button {
+    display: block;
+    padding 10px 20px 10px 20px;
+    float: left;
+    margin-right: -1px;
+    margin-bottom: -1px;
+    color: grey;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.tab-content {
+    display: none;
+    padding: 10px;
+}
+
+.tab-content img {
+    width: 70%;
+}
+
+.here {
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-bottom: 1px solid #ff9e1b;
+    color: black;
+    margin-top: -2px;
+}
+
+.show{
+
+}
